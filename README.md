@@ -1,1 +1,2 @@
-0x11. C - printf CGroup project
+0x11. C - printf Group project...
+Contributor and Collaborator - Kayode Ogidan, & Esther Oyori.
