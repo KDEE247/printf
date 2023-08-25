@@ -113,7 +113,3 @@ long int convert_size_number(long int num, int size);
 long int convert_size_unsgnd(unsigned long int num, int size);
 
 #endif /* MAIN_H */
-<<<<<<< HEAD
-
-=======
->>>>>>> 51e9ec90e6e75312c087ccc9a69bbafccd08dd2a
