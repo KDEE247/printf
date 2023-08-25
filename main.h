@@ -19,16 +19,9 @@
 #define S_SHORT 1
 
 /**
-<<<<<<< HEAD
  * struct fmt - Struct op
- *
- * @fmt: The format.
- * @fn: The function associated.
-=======
- * struct fmt - Struct op.
- * @fmt: Format.
+ * @fmt: format.
  * @fn: Function associated.
->>>>>>> 47d5bc6dbf6ec69da1734793c366965910fabc90
  */
 struct fmt
 {
@@ -36,19 +29,11 @@ struct fmt
 	int (*fn)(va_list, char[], int, int, int, int);
 };
 
-<<<<<<< HEAD
 
 /**
  * typedef struct fmt fmt_t - Struct op
- *
- * @fmt: The format.
- * @fm_t: The function associated.
-=======
-/**
- * typedef struct fmt fmt_t - Struct op
  * @fmt: Format.
- * @fm_t: the function associated.
->>>>>>> 47d5bc6dbf6ec69da1734793c366965910fabc90
+ * @fm_t: Function associated.
  */
 typedef struct fmt fmt_t;
 
@@ -56,13 +41,9 @@ int _printf(const char *format, ...);
 int handle_print(const char *fmt, int *i,
 va_list list, char buffer[], int flags, int width, int precision, int size);
 
-<<<<<<< HEAD
-/*** FUNCTIONS ***/
-=======
 /* FUNCTIONS */
->>>>>>> 47d5bc6dbf6ec69da1734793c366965910fabc90
 
-/* Funtions to print chars and strings */
+/* Functions to print chars and strings */
 int print_char(va_list types, char buffer[],
 	int flags, int width, int precision, int size);
 int print_string(va_list types, char buffer[],
@@ -91,19 +72,11 @@ char buffer[], int flags, char flag_ch, int width, int precision, int size);
 int print_non_printable(va_list types, char buffer[],
 	int flags, int width, int precision, int size);
 
-<<<<<<< HEAD
-/* Funcion to print memory address */
-int print_pointer(va_list types, char buffer[],
-	int flags, int width, int precision, int size);
-
-/* Funciotns to handle other specifiers */
-=======
 /* Function to print memory address */
 int print_pointer(va_list types, char buffer[],
 	int flags, int width, int precision, int size);
 
 /* Functions to handle other specifiers */
->>>>>>> 47d5bc6dbf6ec69da1734793c366965910fabc90
 int get_flags(const char *format, int *i);
 int get_width(const char *format, int *i, va_list list);
 int get_precision(const char *format, int *i, va_list list);
@@ -131,11 +104,7 @@ int write_unsgnd(int is_negative, int ind,
 char buffer[],
 	int flags, int width, int precision, int size);
 
-<<<<<<< HEAD
-/*** UTILS ***/
-=======
 /* UTILS */
->>>>>>> 47d5bc6dbf6ec69da1734793c366965910fabc90
 int is_printable(char);
 int append_hexa_code(char, char[], int);
 int is_digit(char);
@@ -144,4 +113,7 @@ long int convert_size_number(long int num, int size);
 long int convert_size_unsgnd(unsigned long int num, int size);
 
 #endif /* MAIN_H */
+<<<<<<< HEAD
 
+=======
+>>>>>>> 51e9ec90e6e75312c087ccc9a69bbafccd08dd2a
